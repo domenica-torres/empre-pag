@@ -3,31 +3,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web Sencilla</title>
+    <title>Nombre de tu Empresa</title>
+    <link rel="stylesheet" href="styles.css"> 
+    <style>
+        /* styles.css */
+
+    body {
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+    }
+
+    header {
+        background-color: #333;
+        color: #fff;
+        padding: 1rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .logo img {
+        width: 100px; /* Ajusta el tamaño de acuerdo a tu logo */
+        height: 100px;
+        border-radius: 50%;
+    }
+
+    nav ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    nav li {
+        display: inline-block;
+        margin-right: 1rem;
+    }
+
+    nav li a {
+        color: #fff;
+        text-decoration: none;
+    }
+
+    main {
+        padding: 1rem;
+    }
+
+    section {
+        margin-bottom: 2rem;
+    }
+
+    h1 {
+        margin-top: 0;
+    }
+
+    .cta-btn {
+        display: inline-block;
+        background-color: #333;
+        color: #fff;
+        padding: 0.5rem 1rem;
+        text-decoration: none;
+        border: none;
+        border-radius: 4px;
+    }
+
+    footer {
+        background-color: #333;
+        color: #fff;
+        padding: 1rem;
+        text-align: center;
+    }
+
+    </style>
 </head>
 <body>
     <header>
-        <h1>Bienvenido a Mi Página Web</h1>
+        <div class="logo">
+            <img src="https://i.pinimg.com/564x/90/1b/a7/901ba71ef2a5e76c7065462e5d9e6f62.jpg" alt="Logo de tu Empresa">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#acerca">Acerca de</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+            </ul>
+        </nav>
     </header>
-    <nav>
-        <ul>
-            <li><a href="#">Inicio</a></li>
-            <li><a href="#">Acerca de</a></li>
-            <li><a href="#">Contacto</a></li>
-        </ul>
-    </nav>
     <main>
-        <section>
-            <h2>Sección 1</h2>
-            <p>Este es el contenido de la sección 1.</p>
+        <section id="inicio">
+            <h1>Bienvenido a Nombre de tu Empresa</h1>
+            <p>Ofrecemos soluciones de alta calidad para tus necesidades.</p>
+            <a href="#contacto" class="cta-btn">Contáctanos</a>
         </section>
-        <section>
-            <h2>Sección 2</h2>
-            <p>Este es el contenido de la sección 2.</p>
+        <section id="servicios">
+            <h2>Nuestros Servicios</h2>
+            <ul>
+                <li>Servicio 1</li>
+                <li>Servicio 2</li>
+                <li>Servicio 3</li>
+            </ul>
+        </section>
+        <section id="acerca">
+            <h2>Acerca de Nosotros</h2>
+            <p>Somos una empresa dedicada a...</p>
+        </section>
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <p>Estamos ubicados en:</p>
+            <p>Teléfono: (123) 456-7890</p>
+            <p>Email: info@tuempresa.com</p>
+            <a href="#inicio" class="cta-btn">Volver arriba</a>
         </section>
     </main>
     <footer>
-        <p>Derechos de autor © 2023. Todos los derechos reservados.</p>
+        <p>Derechos de autor © 2023. Todos los derechos reservados. | Nombre de tu Empresa</p>
     </footer>
 </body>
 </html>
